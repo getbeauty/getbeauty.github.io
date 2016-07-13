@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row-fluid">
+    {% for item in include.data %}
+      <div class="span4">
+        <div class="moreInfo">
+          <span class="{{ item.icon_class }}"><i></i></span>
+          <h5 class="std">{{ item.title }}</h5>
+          <p class="light">{{ item.description }}</p>
+          <a href="{{ item.url }}" class="readmoreBtn">...</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

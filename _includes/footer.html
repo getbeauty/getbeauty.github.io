@@ -1,38 +1,32 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+<div id="footer">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span3">
+        <h3 class="headFooter">Contact us</h3>
+        <div class="contactFooter">
+          <p>{{ site.data.footer.address }}</p>
+          <div class="spacer-f"></div>
+          <p><strong>{{ site.data.footer.phone_number }}</strong></p>
+          <p><strong><a href="mailto:{{ site.data.footer.email }}">{{ site.data.footer.email }}</a></strong></p>
+        </div>
+      </div>
+      <div class="span6 rightSpace">
+        <h3 class="headFooter">Latest News</h3>
+        <ul class="latestNews">
+          {% for post in site.posts limit:1 %}
+            <li>
+              <h5 class="subTitle">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} <span class="newsDate">{{ post.date | date: "%b %-d, %Y" }}</span></a>
+              </h5>
+              <p>{{ post.content | strip_html | truncatewords:30 }}</p>
+            </li>
+          {% endfor %}
         </ul>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+      <div class="span3">
+        <h3 class="headFooter oth">{{ site.data.footer.about_us_title }}</h3>
+        <p class="aboutUs">{{ site.data.footer.about_us_description}}</p>
       </div>
     </div>
-
   </div>
-
-</footer>
+</div>

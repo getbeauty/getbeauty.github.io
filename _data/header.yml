@@ -1,0 +1,26 @@
+menus:
+  - title: Home
+    url: /
+  - title: About
+    url: /about1
+    dropdowns:
+      - title: About1
+        url: /about1
+      - title: About2
+        url: /about2
+  - title: Portfolio
+    url: /portfolio_list
+    dropdowns:
+      - title: Portfolio List
+        url: /portfolio_list
+      - title: Single Portfolio
+        url: /test
+  - title: Blog
+    url: /blog_list
+    dropdowns:
+      - title: Blog List
+        url: /blog_list
+      - title: Single Blog
+        url: /test
+  - title: Contact
+    url: /contact

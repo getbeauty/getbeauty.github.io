@@ -1,0 +1,15 @@
+page_title:
+  bg_img: /content/bckgr.jpg
+  title: Our work Showcase
+  description: |
+    At dawn on the 13th the Carnatic entered the port of Yokohama. This is an important port of call in the Pacific,
+    where all the mail-steamers, and those carrying travellers
+  url: "#"
+  button: Learn More
+sub_tab:
+  - title: Portfolio
+    url: "#"
+  - title: Featured Projects
+    url: "#"
+  - title: Project Inquiry
+    url: "#"

@@ -1,0 +1,18 @@
+<footer class="footNotes">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span6">
+        <p>{{ site.data.footer_note.copyright }}</p>
+      </div>
+      <div class="span6 doRight">
+        <ul class="smallSocials ">
+          {% for item in site.data.footer_note.social_list %}
+            <li><a href="{{ item.url }}" data-toggle="tooltip" title="" data-original-title="{{ item.service }}">
+              <span class="entypo {{ item.icon_class }}"><i></i></span></a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

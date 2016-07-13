@@ -6,16 +6,64 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title:          GetBeauty
+email:          getbeauty.developers@gmail.com
+description:    GET BEAUTY
+url:            http://www.getbeauty.us
+baseurl:        ""
+css_url:        "/static/css"
+img_url:        "/static/images"
+js_url:         "/static/js"
+bootstrap_url:  "/static/bootstrap"
+disqus:         mintakson
+share:          true
+dropcap:	      true
+logo_path:      "/content/invision-logo.png"
 
 # Build settings
-markdown: kramdown
+markdown:       kramdown
+highlighter:    pygments
+timezone:       America/Los_Angeles
+future:         true
+rouge:          pygments
+paginate:       5
+paginate_path:  "page:num"
+permalink:      /blog/:title/
+
+# Owner/author information
+owner:
+  name:           Get Beauty
+  email:          Get Beauty@gmail.com
+
+# google:
+#   analytics:      UA-68684835-2
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+gems:
+  - jemoji
+  - jekyll-paginate
+
+atom:
+  buildCommand:
+    - jekyll
+    - build
+    - --drafts
+    - --option
+    - --this
+  buildEnv:
+    JEKYLL_ENV: development
+  postDirs:
+  defaultPostDir: _drafts

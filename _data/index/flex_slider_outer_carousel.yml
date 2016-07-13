@@ -1,0 +1,40 @@
+- title: Project Name 1
+  data-cat: Consulting
+  url: portfolio-details.html
+  img: /content/carousel-pt1.jpg
+- title: Project Name 2
+  data-cat: Design
+  url: portfolio-details.html
+  img: /content/carousel-pt2.jpg
+- title: Project Name 3
+  data-cat: Branding
+  url: portfolio-details.html
+  img: /content/carousel-pt3.jpg
+- title: Project Name 4
+  data-cat: Consulting
+  url: portfolio-details.html
+  img: /content/carousel-pt4.jpg
+- title: Project Name 5
+  data-cat: Support
+  url: portfolio-details.html
+  img: /content/carousel-pt5.jpg
+- title: Project Name 6
+  data-cat: Web
+  url: portfolio-details.html
+  img: /content/carousel-pt6.jpg
+- title: Project Name 7
+  data-cat: iOS
+  url: portfolio-details.html
+  img: /content/carousel-pt1.jpg
+- title: Project Name 8
+  data-cat: Android
+  url: portfolio-details.html
+  img: /content/carousel-pt2.jpg
+- title: Project Name 9
+  data-cat: Django
+  url: portfolio-details.html
+  img: /content/carousel-pt3.jpg
+- title: Project Name 10
+  data-cat: Ruby on Rails
+  url: portfolio-details.html
+  img: /content/carousel-pt4.jpg

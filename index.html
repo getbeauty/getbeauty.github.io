@@ -2,22 +2,26 @@
 layout: default
 ---
 
-<div class="home">
+{% include utils/flex_slider_full_width.html data=site.data.index.flex_slider_full_width %}
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="greyBox">
+  {% include utils/info_item_3.html data=site.data.index.info_item_3 %}
 </div>
+
+<div class="container">
+  {% include utils/centered_content.html data=site.data.index.centered_content %}
+</div>
+
+<div class="container">
+  {% include utils/flex_slider_outer_carousel.html data=site.data.index.flex_slider_outer_carousel %}
+</div>
+
+<div class="greyBox">
+  {% include utils/youtube_media_play.html data=site.data.index.youtube_media_play %}
+</div>
+
+<div class="container">
+  {% include utils/flex_slider_full_width_easyflex.html data=site.data.index.flex_slider_full_width_easyflex %}
+</div>
+
+{% include utils/dark_title.html data=site.data.index.dark_title %}

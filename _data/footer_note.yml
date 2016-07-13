@@ -1,0 +1,17 @@
+copyright:    © 2016 Get Beauty, Inc. All Rights Reserved.
+social_list:
+  - service:  Pinterest
+    url:      "#"
+    icon_class: pinterest-circled
+  - service:  Google+
+    url:      "#"
+    icon_class: gplus-circled
+  - service:  Facebook
+    url:      "#"
+    icon_class: facebook-circled
+  - service:  Twitter
+    url:      "#"
+    icon_class: twitter-circled
+  - service:  Flickr
+    url:      "#"
+    icon_class: flickr-circled

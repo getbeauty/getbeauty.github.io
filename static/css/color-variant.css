@@ -1,0 +1,67 @@
+a:hover {
+  color: red;
+}
+
+.oth {
+  color: red;
+}
+
+p.promoUrl {
+  color: red;
+}
+
+.dropdown-menu {
+  border-top: 3px solid red;
+}
+
+.btn.btn-back:hover {
+  background-color: red;
+  *background-color: red;
+
+}
+
+.btn-primary {
+  background: red;
+  border: 2px solid red; 
+}
+
+.progress .bar {
+  background: red;
+}
+
+.readmoreBtn {
+  color: red;
+}
+
+.footNotes ul.smallSocials li a:hover i:before {
+  color: red;
+}
+
+ul.menu2 li.active,
+ul.menu2 li:hover {
+  border-bottom: 3px solid red;
+}
+
+.popular-links a {
+  color: red;
+}
+
+.widget-inner ul li a {
+  color: red;
+}
+
+.customMapMarker i:before { 
+  color: red;
+}
+
+.flexSimple.flexslider .flex-control-paging li a.flex-active {
+  background: red;
+}
+.workItem .cOverlay {
+  background: red;
+}
+.workItem .cDetails {
+  color: red;
+}
+
+

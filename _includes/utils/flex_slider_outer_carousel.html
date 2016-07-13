@@ -1,0 +1,12 @@
+<div class="flexslider grayPhotos flexCarousel">
+  <ul class="slides">
+    {% for item in include.data %}
+      <li data-title="{{ item.title }}" data-cat="{{ item.data-cat }}" data-link="{{ item.url }}">
+        <a href="{{ item.url }}"><img src="{{ site.img_url }}{{ item.img }}" alt=" "></a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="flexCarousel-caption">
+  <a href="#"><br><span><br></span></a>
+</div>

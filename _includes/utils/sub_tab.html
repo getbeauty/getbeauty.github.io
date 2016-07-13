@@ -1,0 +1,19 @@
+<div class="greyBox bottomSpace">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span10">
+        <ul class="menu2">
+          {% for item in include.data %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            <!-- <li class="active"><a href="{{ item.url }}">{{ item.title }}</a></li> -->
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- <div class="span2">
+        <div class="homeSign">
+          <a href="index.html" title="Home"><span class="entypo home"><i></i></span></a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

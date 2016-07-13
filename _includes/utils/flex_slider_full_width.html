@@ -1,0 +1,22 @@
+<div class="flexFull flexslider loading-slider">
+  <ul class="slides">
+    {% for item in include.data %}
+      <li>
+        <div class="bg-slid">
+          <img src="{{ site.img_url }}{{ item.img }}" alt="">
+        </div>
+
+        <div class="descFull">
+          <div class="container">
+            <br><br><br><br><br><br>
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+            <br>
+            <a href="{{ item.button_url }}" class="btn btn-primary">{{ item.button }}</a>
+            <a href="{{ item.sub_button_url }}" class="btn">{{ item.sub_button }}</a>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
